@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,32 +21,38 @@
     <fieldset id="fundoBox">
 
         <fieldset class="fieldset">
-            <legend class="legenda">Pedra Papel e Tesoura</legend>
-           
+            <legend class="legenda">Pedra, Papel e Tesoura</legend>
 
-            <legend>Escolha a opção</legend>
-            <input type="image" name="pedra" src="pedra2.png" width="50" height="30" alt="submit">         
-            <label> Pedra </label> 
 
-            <input type="image"  name="Papel" src="papel.png" width="50" height="30" alt="submit">         
-            <label> Papel </label>  
-
-            <input type="image" name="Tesoura" src="tesoura2.png" width="50" height="30" alt="submit">         
-            <label> Tesoura </label> 
+            <legend>Escolha uma opção abaixo:</legend>
+            <div class="inline">
+                <input type="image" name="pedra" src="pedra2.png" width="50" height="30" alt="submit">
+                <figcaption> Pedra </figcaption>
+            </div>
+            <div class="inline">
+                <input type="image" name="Papel" src="papel.png" width="50" height="30" alt="submit">
+                <figcaption> Papel </figcaption>
+            </div>
+            <div class="inline">
+                <input type="image" name="Tesoura" src="tesoura2.png" width="50" height="30" alt="submit">
+                <figcaption> Tesoura </figcaption>
+            </div>
         </fieldset>
 
-        <button id="btn" onclick="calcular()" class="botao">Calcular</button>
+        <button id="btn" onclick="calcular()" class="botao">Jogar</button>
         <div>
-            
-        <span id="resultadoTexto"></span> <span id="resultado"></span></div>
+
+            <span id="resultadoTexto"></span> <span id="resultado"></span>
+        </div>
 
 
     </fieldset>
 
     <img id="imgResultado" src="">
 
-<script src="app.js"></script>
+    <script src="app.js"></script>
 
 
 </body>
+
 </html>
